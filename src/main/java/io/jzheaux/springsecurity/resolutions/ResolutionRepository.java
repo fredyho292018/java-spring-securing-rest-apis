@@ -17,4 +17,6 @@ public interface ResolutionRepository extends CrudRepository<Resolution, UUID> {
 	@Modifying
 	@Query("UPDATE Resolution SET completed = 1 WHERE id = :id")
 	void complete(UUID id);
+
+
 }
